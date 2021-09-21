@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Hello Javascript</title>
+</head>
+<body>
+    <p id="welcome"></p>
+
+    <!--
+        A tag script indica que é um código Javascript.
+        console.log indica que o texto será impresso no console da página.
+        Para comentar um trecho dentro da tag script, pode-se utilizar //. No HTML, apenas !--.
+    -->
+
+    <script type="text/javascript">
+        // var welcome = "Hello Javascript - valor do var no corpo do HTML do index"
+        // document.getElementById("welcome").append(welcome)
+        // document.getElementById("welcome").append("Hello Javascript - texto do id na página")
+        // console.log("Hello Javascript - texto no console")
+    </script>
+
+    <!-- início DOM -->
+    <h1>Calculadora</h1>
+
+    <input type="text" id="numberOne" placeholder="Informe o valor 1">
+    <input type="text" id="numberTwo" placeholder="Informe o valor 2">
+    <button onclick="somarValores()">Somar valores</button>
+
+    <div id="resultado">
+    </div>
+
+    <!-- fim DOM -->
+
+    <!--  Para chamar um arquivo de scripts Javascript, utilizar o src para referenciar o arquivo. -->
+    <script type="text/javascript" src="soma.js">
+
+    </script>
+</body>
+</html>
